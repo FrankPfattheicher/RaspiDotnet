@@ -1,0 +1,33 @@
+1) Install GPG key
+
+
+sudo wget -qO - https://packagecloud.io/headmelted/codebuilds/gpgkey | sudo apt-key add -;
+2) Add source repository
+
+
+sudo nano /etc/apt/sources.list
+and add ...
+
+
+deb https://packagecloud.io/headmelted/codebuilds/raspbian/ jessie main
+Ctrl-X, Y, enter to exit 'nano' and save the updated file.
+
+Note that it should be "jessie" even when using "stretch".
+
+3) Install VS Code (code-oss)
+
+
+sudo apt-get update
+sudo apt-get install code-oss
+4) Launching VS Code (code-oss)
+
+Under the Pi desktop start menu, under Programming, there should now be a "Code - OSS" link.
+
+5) Links
+
+Headmelted home page : https://code.headmelted.com
+Package releases : https://packagecloud.io/headmelted/codebuilds
+GPG key from : https://packagecloud.io/headmelted/codebuilds/gpgkey
+
+6) Edit History
+

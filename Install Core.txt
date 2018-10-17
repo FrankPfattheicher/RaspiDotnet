@@ -1,0 +1,57 @@
+
+Linux (armhf) (for glibc based OS)
+https://github.com/dotnet/core-setup
+
+SDK
+https://www.microsoft.com/net/download?initial-os=linux
+
+
+sudo apt-get -y update
+sudo apt-get -y install libunwind8 gettext
+
+wget https://download.visualstudio.microsoft.com/download/pr/10b96626-02d8-415a-be85-051a2a48d0c2/5ec51d3d9f092ba558fb5f1f03d26699/dotnet-sdk-2.1.403-linux-arm.tar.gz
+wget https://dotnetcli.blob.core.windows.net/dotnet/Runtime/release/2.1/dotnet-runtime-latest-linux-arm.tar.gz
+sudo mkdir /opt/dotnet
+sudo tar -xvf dotnet-sdk-2.1.403-linux-arm.tar.gz -C /opt/dotnet/
+sudo tar -xvf dotnet-runtime-latest-linux-arm.tar.gz -C /opt/dotnet/
+sudo ln -s /opt/dotnet/dotnet /usr/local/bin
+dotnet --info
+
+
+
+
+pi@raspberrypi:~ $ dotnet --info
+.NET Core SDK (reflecting any global.json):
+ Version:   2.1.403
+ Commit:    04e15494b6
+
+Runtime Environment:
+ OS Name:     raspbian
+ OS Version:  9
+ OS Platform: Linux
+ RID:         linux-arm
+ Base Path:   /opt/dotnet/sdk/2.1.403/
+
+Host (useful for support):
+  Version: 2.1.5
+  Commit:  290303f510
+
+.NET Core SDKs installed:
+  2.1.403 [/opt/dotnet/sdk]
+
+.NET Core runtimes installed:
+  Microsoft.AspNetCore.All 2.1.5 [/opt/dotnet/shared/Microsoft.AspNetCore.All]
+  Microsoft.AspNetCore.App 2.1.5 [/opt/dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 2.1.5 [/opt/dotnet/shared/Microsoft.NETCore.App]
+
+To install additional .NET Core runtimes or SDKs:
+  https://aka.ms/dotnet-download
+
+  
+  
+  
+  
+dotnet new console -o hello
+cd hello
+dotnet run
+
