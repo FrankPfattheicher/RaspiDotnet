@@ -2,5 +2,14 @@
 
 Dateimanager		pcmanfm
 
-Geplante Aufgaben	
+Geplante Aufgaben	crontab -e
+
+Taskmanager			htop
+
+sh-commands
+& am Ende - no wait
+
+service log			journalctl -u systemd-modules-load.service -f
+
+
 
