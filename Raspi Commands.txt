@@ -2,7 +2,7 @@
 
 Dateimanager		pcmanfm
 
-Geplante Aufgaben	crontab -e
+Geplante Aufgaben	crontab -e						(gnome-schedule)
 
 Taskmanager			htop
 
@@ -10,6 +10,6 @@ sh-commands
 & am Ende - no wait
 
 service log			journalctl -u systemd-modules-load.service -f
-
+-f 		follow
 
 

@@ -1,0 +1,23 @@
+Install the debugger for linux-arm (target computer)
+
+Install the native dependencies of .NET Core. 
+On Raspbian, this should only mean installing Curl and unzip if it they aren't already installed (sudo apt-get install curl).
+
+Run the following command on linux-arm (installs to ~/vsdbg):
+curl -sSL https://aka.ms/getvsdbgsh | bash /dev/stdin -r linux-arm -v latest -l ~/vsdbg
+
+
+
+Linux: How to automate SSH login with password?
+
+$ ssh-keygen -t rsa -b 2048
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/username/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/username/.ssh/id_rsa.
+Your public key has been saved in /home/username/.ssh/id_rsa.pub.
+Copy your keys to the target server:
+
+$ ssh-copy-id id@server			i.e. pi@<RaspPiIpAddress>
+id@server's password: 			i.e. raspberry
