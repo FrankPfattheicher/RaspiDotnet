@@ -1,30 +1,30 @@
-       {
-           "name": ".NET Core Remote Attach",
-           "type": "coreclr",
-           "request": "attach",
-           "processId": "${command:pickRemoteProcess}",
-           "pipeTransport": {
-               "pipeCwd": "${workspaceFolder}",
-               "pipeProgram": "c:\\Program Files\\PuTTY\\plink.exe",
-               "pipeArgs": [
-                   "-pw", "raspberry",
-                   "pi@192.168.2.63"
-               ],
-               "debuggerPath": "~/vsdbg/vsdbg"
-           }
-       },
+{
+   "name": ".NET Core Remote Attach",
+   "type": "coreclr",
+   "request": "attach",
+   "processId": "${command:pickRemoteProcess}",
+   "pipeTransport": {
+	   "pipeCwd": "${workspaceFolder}",
+	   "pipeProgram": "c:\\Program Files\\PuTTY\\plink.exe",
+	   "pipeArgs": [
+		   "-pw", "raspberry",
+		   "pi@192.168.2.63"
+	   ],
+	   "debuggerPath": "~/vsdbg/vsdbg"
+   }
+},
 
-	   {
-           "name": ".NET Core Remote Attach",
-           "type": "coreclr",
-           "request": "attach",
-           "processId": "${command:pickRemoteProcess}",
-           "pipeTransport": {
-               "pipeCwd": "${workspaceFolder}",
-               "pipeProgram": "/usr/bin/ssh",
-               "pipeArgs": [
-                   "pi@192.168.2.63"
-               ],
-               "debuggerPath": "~/vsdbg/vsdbg"
-           }
-       },
+{
+   "name": ".NET Core Remote Attach",
+   "type": "coreclr",
+   "request": "attach",
+   "processId": "${command:pickRemoteProcess}",
+   "pipeTransport": {
+	   "pipeCwd": "${workspaceFolder}",
+	   "pipeProgram": "/usr/bin/ssh",
+	   "pipeArgs": [
+		   "pi@192.168.2.63"
+	   ],
+	   "debuggerPath": "~/vsdbg/vsdbg"
+   }
+},
