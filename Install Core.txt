@@ -59,9 +59,6 @@ To install additional .NET Core runtimes or SDKs:
   https://aka.ms/dotnet-download
 
   
-  
-  
-  
 dotnet new console -o hello
 cd hello
 dotnet run
